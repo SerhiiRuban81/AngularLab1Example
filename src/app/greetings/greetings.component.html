@@ -1,0 +1,15 @@
+<p>{{this.message}}</p>
+<blockquote><i>"{{citation.text}}"</i></blockquote>
+<hr/>
+<div class="text-right">{{citation.author}}</div>
+<h3>Количество ссылок: {{this.citation.links.length}}</h3>
+<ul>
+    <li *ngFor="let item of this.citation.links">
+        <a href="{{item.link}}">{{item.description}}</a>
+        <!-- <p>{{item}}</p> -->
+    </li>
+</ul>
+<div class="photos">
+    <!-- <div class="photo-item" *ngFor="let photo of citation.photos"><img  src="{{photo.url}}" alt="{{photo.alt}}"/></div> -->
+    <img class="photo-item"  *ngFor="let photo of citation.photos" src="{{photo.url}}" alt="{{photo.alt}}"/>
+</div>

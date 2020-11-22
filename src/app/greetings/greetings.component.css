@@ -1,0 +1,28 @@
+.text-right{
+    text-align: right;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: list-item;
+}
+a:hover{
+    color: darkslateblue;
+}
+
+.photos{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    /* Выравнивание по высоте для сохранения пропорций */
+    align-items: flex-start;
+    width: 100%;
+}
+.photo-item{
+   display: block;
+   width: 30%;
+   /* flex: 33.33% 0 0 ;  */
+   flex: 33% 0 0 ; 
+   /* height: auto; */
+}
